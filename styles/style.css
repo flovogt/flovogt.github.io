@@ -1,0 +1,46 @@
+
+/* Global styles*/
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #dcdcdc 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Navigation */
+nav {
+   padding-top: 20px;
+   text-align: right;
+}
+nav a {
+    padding-left: 40px;
+}
+nav a:last-child {
+    padding-right: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+/* Main */
+
+/* Footer */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}

@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 
 <head>
-
+    <title>Florian Vogt</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="main.js" ></script>
 </head>
 
-<body>
+<body onload="onStart()">
+    <nav>
+        <a href="#about" name="nav_link" id="nav_link_about">About</a>
+        <a href="#material" name="nav_link" id="nav_link_material">Material</a>
+        <a href="#contact" name="nav_link" id="nav_link_contact">Contact</a>
+    </nav>
     <header>
         <h1>Florian Vogt</h1>
         <h2>Beautify user interfaces to maximize user experience</h2>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#material">Material</a>
-        <a href="#contact">Contact</a>
-    </nav>
     <main>
-        <article id="about">
+        <article id="about" class="hidden">
             <h2>About Me</h2>
             <section>
                 <p>I am a web developer. Currently, my focus is on OpenUI5.</p>
             </section>
         </article>
-        <article id="material">
+        <article id="material" class="hidden">
             <h2>Material</h2>
             <section>
                 <h4>UI5con On Air 2020</h4>
                 <p>Recording blabla</p>
             </section>
         </article>
-        <article id="contact">
+        <article id="contact" class="hidden">
             <h2>Contact</h2>
             <section>
              <p>Get in touch with me on my social media channels</p>
