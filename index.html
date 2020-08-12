@@ -3,7 +3,7 @@
 <head>
     <title>Florian Vogt</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="main.js" ></script>
+    <script src="main.js"></script>
 </head>
 
 <body onload="onStart()">
@@ -15,6 +15,7 @@
     <header>
         <h1>Florian Vogt</h1>
         <h2>Beautify user interfaces to maximize user experience</h2>
+        <img src="images/laptop.png" lazy="true" width="80px"/>
     </header>
     <main>
         <article id="about" class="hidden">
@@ -33,12 +34,27 @@
         <article id="contact" class="hidden">
             <h2>Contact</h2>
             <section>
-             <p>Get in touch with me on my social media channels</p>
+                <p>Get in touch with me on my social media channels.</p>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <a href="https://github.com/flovogt/" target="_blank"><img lazy="true"
+                                src="images/logo_github.png" width="80px" /></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://twitter.com/flovogt2" target="_blank"><img lazy="true"
+                                src="images/logo_twitter.svg" width="80px" /></a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://www.linkedin.com/in/vogt-florian/" target="_blank"><img lazy="true"
+                                src="images/logo_linkedin.png" width="80px" /></a>
+                    </div>
+                </div>
+
             </section>
         </article>
     </main>
     <footer>
-        <p>&copy; <a href="https://github.com/flovogt/">flovogt</a></p>
+        <p>&copy; <a href="https://github.com/flovogt/" target="_blank">flovogt</a></p>
     </footer>
 
 </body>

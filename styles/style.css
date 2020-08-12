@@ -25,6 +25,16 @@ body {
     display: none;
 }
 
+.grid-container {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
 /* Navigation */
 nav {
    padding-top: 20px;
@@ -43,7 +53,9 @@ header {
 }
 
 /* Main */
+main {
 
+}
 /* Footer */
 footer {
     position: fixed;
