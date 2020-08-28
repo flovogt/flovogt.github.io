@@ -53,9 +53,16 @@ header {
 }
 
 /* Main */
-main {
-
+.contact_link {  
+    font-size: 60px;
+    color: #686868;
 }
+
+a {
+    text-decoration: none;
+    color: #686868;
+}
+
 /* Footer */
 footer {
     position: fixed;
