@@ -1,14 +1,5 @@
-/* Global styles*/
-@font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/raleway/v17/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrcVIT9d0c8.woff) format('woff');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 body {
-    font-family: Raleway, sans-serif;
+    font-family: 'Baloo 2', cursive;
     height: 100%;
     background-image: linear-gradient(to bottom, #ffffff 0%, #dcdcdc 100%);
     background-repeat: no-repeat;
@@ -44,18 +35,29 @@ nav a {
     padding-left: 40px;
 }
 nav a:last-child {
-    padding-right: 20px;
+    padding-right: 8px;
 }
 
 /* Header */
 header {
+    padding-top: 60px;
     text-align: center;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 200px;
 }
 
 /* Main */
 .contact_link {  
-    font-size: 4em;
+    font-size: 80pt;
     color: #686868;
+}
+
+nav, main, header, article, footer {
+    width: 600px;
+    margin: auto;
 }
 
 a {
@@ -63,10 +65,18 @@ a {
     color: #686868;
 }
 
+article {
+  text-align: left;
+}
+
+section {
+    padding-right: 8px;
+    font-size: 13pt;
+}
+
 /* Footer */
 footer {
-    position: fixed;
-    width: 100%;
     bottom: 0;
+    padding-top: 40px;
     text-align: center;
 }

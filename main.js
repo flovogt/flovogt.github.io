@@ -25,7 +25,7 @@ var fnOnNavLinkPressed = function(oEvent){
 };
 
 var fnGetAnchor = function() {
-    return (document.URL.split('#').length > 1) ? document.URL.split('#')[1] : null;
+    return (document.URL.split('#').length > 1) ? document.URL.split('#')[1] : "about";
 };
 
 function onStart () {
