@@ -1,24 +1,26 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <title>Florian Vogt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+        content="object-src 'none'; script-src 'nonce-devpower'; base-uri 'none'; report-uri https://your-report-collector.example.com/" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-    <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/57fc4a8dd4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/57fc4a8dd4.js" crossorigin="anonymous" nonce="devpower"></script>
 </head>
 
-<body onload="onStart()">
+<body>
     <nav>
         <a href="#about" name="nav_link" id="nav_link_about">About</a>
         <a href="#material" name="nav_link" id="nav_link_material">Material</a>
         <a href="#contact" name="nav_link" id="nav_link_contact">Contact</a>
     </nav>
     <header>
-        <img src="images/me.jpg" lazy="true" class="profile"/>
+        <img src="images/me.jpg" lazy="true" alt="profile picture of me" class="profile" />
     </header>
     <main>
         <article id="about" class="hidden">
@@ -39,7 +41,9 @@
             <h2>Material</h2>
             <section>
                 <h4>UI5con On Air 2020</h4>
-                <p>Recording blabla</p>
+                <p>UI5 Routing with Reusable Components: <a href="https://youtu.be/Cs84OzT7xrw" target="_blank"
+                        rel="noopener noreferrer">Recording
+                    </a></p>
             </section>
         </article>
         <article id="contact" class="hidden">
@@ -48,17 +52,20 @@
                 <p>Get in touch with me on my social media channels.</p>
                 <div class="grid-container">
                     <div class="grid-item">
-                        <a href="https://github.com/flovogt/" target="_blank" class="contact_link">
+                        <a href="https://github.com/flovogt/" target="_blank" rel="noopener noreferrer"
+                            class="contact_link">
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
                     <div class="grid-item">
-                        <a href="https://twitter.com/tgovolf" target="_blank" class="contact_link">
+                        <a href="https://twitter.com/tgovolf" target="_blank" rel="noopener noreferrer"
+                            class="contact_link">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
                     <div class="grid-item">
-                        <a href="https://www.linkedin.com/in/vogt-florian/" target="_blank" class="contact_link">
+                        <a href="https://www.linkedin.com/in/vogt-florian/" target="_blank" rel="noopener noreferrer"
+                            class="contact_link">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </div>
@@ -68,9 +75,9 @@
         </article>
     </main>
     <footer>
-        <p>&copy; <a href="https://github.com/flovogt/" target="_blank">flovogt</a></p>
+        <p>&copy; <a href="https://github.com/flovogt/" target="_blank" rel="noopener noreferrer">flovogt</a></p>
     </footer>
-
+    <script src="main.js" nonce="devpower"></script>
 </body>
 
 </html>

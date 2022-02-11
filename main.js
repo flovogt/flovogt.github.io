@@ -28,7 +28,9 @@ var fnGetAnchor = function() {
     return (document.URL.split('#').length > 1) ? document.URL.split('#')[1] : "about";
 };
 
-function onStart () {
+var fnOnStart = function () {
     document.getElementsByName("nav_link").forEach(n => n.onclick = fnOnNavLinkPressed);
     fnShowArticle(document.getElementById(fnGetAnchor()));
 };
+
+fnOnStart();
