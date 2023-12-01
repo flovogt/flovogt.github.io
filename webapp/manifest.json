@@ -36,10 +36,6 @@
                     ],
                     "fallbackLocale": "en"
                 }
-            },
-            "": {
-                "type": "sap.ui.model.json.JSONModel",
-                "uri": "model/content.json"
             }
         },
         "resources": {
