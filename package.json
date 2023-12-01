@@ -1,0 +1,23 @@
+{
+	"name": "flovogt-website",
+	"version": "1.0.0",
+	"description": "The website of flovogt",
+	"private": true,
+	"engines": {
+		"node": ">=18.14.0",
+		"npm": ">=9"
+	},
+	"scripts": {
+		"start": "ui5 serve",
+		"lint": "eslint webapp",
+		"test": "npm run lint",
+		"build": "ui5 build --clean-dest",
+		"serve-dist": "ws --compress -d dist"
+	},
+	"devDependencies": {
+		"@ui5/cli": "^3.7.2",
+		"eslint": "^8.54.0",
+		"local-web-server": "^5.3.0",
+		"rimraf": "^5.0.5"
+	}
+}

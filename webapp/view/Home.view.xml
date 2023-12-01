@@ -1,0 +1,24 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    controllerName="flovogt.website.controller.Home"
+>
+    <Page
+        id="homePage"
+        showHeader="false"
+    >
+        <HBox
+            justifyContent="Start"
+            alignContent="Center"
+            renderType="Bare"
+            class="sapUiSmallMarginTop"
+        >
+            <Text text="This is" class="sapUiTinyMarginBegin sapUiTinyMarginEnd"/>
+            <Link
+                text="flovogt"
+                target="_blank"
+                href="https://github.com/flovogt/"
+            />
+        </HBox>
+    </Page>
+</mvc:View>
