@@ -8,17 +8,46 @@
         showHeader="false"
     >
         <HBox
-            justifyContent="Start"
-            alignContent="Center"
             renderType="Bare"
-            class="sapUiSmallMarginTop"
+            justifyContent="Center"
+            alignContent="Center"
+            height="100%"
         >
-            <Text text="This is" class="sapUiTinyMarginBegin sapUiTinyMarginEnd"/>
-            <Link
-                text="flovogt"
-                target="_blank"
-                href="https://github.com/flovogt/"
-            />
+            <VBox
+                renderType="Bare"
+                justifyContent="Center"
+                alignItems="Center"
+                height="100%"
+            >
+                <Avatar
+                    id="avatar"
+                    src="img/flovogt.jpg"
+                    displaySize="XL"
+                    showBorder="true"
+                    press="onPress"
+                    class="speakerAvatar sapUiMediumMarginBottom"
+                />
+                <SegmentedButton
+                    id="segmentedButton"
+                    selectedKey="home"
+                    width="300px"
+                >
+                    <items>
+                        <SegmentedButtonItem
+                            text="{i18n>homeText}"
+                            key="home"
+                        />
+                        <SegmentedButtonItem
+                            text="{i18n>aboutText}"
+                            key="about"
+                        />
+                        <SegmentedButtonItem
+                            text="{i18n>projectsText}"
+                            key="projects"
+                        />
+                    </items>
+                </SegmentedButton>
+            </VBox>
         </HBox>
     </Page>
 </mvc:View>
