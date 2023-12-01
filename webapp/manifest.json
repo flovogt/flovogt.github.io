@@ -31,10 +31,9 @@
                 "settings": {
                     "bundleName": "flovogt.website.i18n.i18n",
                     "supportedLocales": [
-                        "en",
-                        "de"
+                       ""
                     ],
-                    "fallbackLocale": "en"
+                    "fallbackLocale": ""
                 }
             }
         },
