@@ -5,6 +5,8 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -16,7 +18,7 @@ jobs:
     - name: UI5 Build
       run: |
         npm run build
-        touch site/.nojekyll
+        touch dist/.nojekyll
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
