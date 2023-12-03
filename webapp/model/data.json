@@ -38,5 +38,35 @@
                 "location": "spLocation"
             }
         ]
-    }
+    },
+    "projects": [
+        {
+            "name": "OpenUI5",
+            "description": "descOpenUI5",
+            "url": "https://github.com/SAP/openui5",
+            "start": "2017",
+            "end": "current"
+        },
+        {
+            "name": "UI5 Tooling",
+            "description": "descUI5Tooling",
+            "url": "https://github.com/SAP/ui5-tooling",
+            "start": "2020",
+            "end": "current"
+        },
+        {
+            "name": "UI5 Tooling Extensions",
+            "description": "descUI5ToolingExtensions",
+            "url": "https://github.com/SAP/ui5-tooling-extensions",
+            "start": "2022",
+            "end": "current"
+        },
+        {
+            "name": "UI5 Nested Component Szenario",
+            "description": "descUI5NestedComponentSzenario",
+            "url": "https://github.com/flovogt/ui5-nested-component-scenario",
+            "start": "2020",
+            "end": "current"
+        }
+    ]
 }
