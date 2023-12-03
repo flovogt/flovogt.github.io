@@ -2,11 +2,31 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:f="sap.f"
-    controllerName="flovogt.website.controller.Home"
+    xmlns:card="sap.f.cards"
+    controllerName="flovogt.website.controller.Topic"
 >
-    <f:Card>
+    <f:Card id="card">
         <f:content>
-            <Text text="Home ipsum" />
+            <VBox
+                height="110px"
+                renderType="Bare"
+                class="sapUiSmallMargin"
+                justifyContent="SpaceBetween"
+            >
+                <Title
+                    text="{i18n>homeMessage}"
+                    textAlign="Center"
+                    level="H2"
+                />
+                <Text
+                    text="{i18n>homeText}"
+                    textAlign="Center"
+                />
+                <Text
+                    text="{i18n>homeText2}"
+                    textAlign="Center"
+                />
+            </VBox>
         </f:content>
     </f:Card>
 </mvc:View>
