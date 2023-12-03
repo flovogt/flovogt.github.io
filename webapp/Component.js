@@ -1,6 +1,7 @@
 sap.ui.define([
-    "sap/ui/core/UIComponent"
-], (UIComponent) => {
+    "sap/ui/core/UIComponent",
+    "sap/ui/Device"
+], (UIComponent, Device) => {
     "use strict";
     return UIComponent.extend("flovogt.website.Component", {
         metadata: {
@@ -9,9 +10,12 @@ sap.ui.define([
         },
 
         init() {
-            // call the init function of the parent
             UIComponent.prototype.init.apply(this, arguments);
             this.getRouter().initialize();
-        }
+        },
+
+        getContentDensityClass() {
+			return Device.support.touch ? "sapUiSizeCozy" : "sapUiSizeCompact";
+		}
     });
 });

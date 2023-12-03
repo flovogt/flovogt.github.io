@@ -8,17 +8,18 @@
         id="homePage"
         showHeader="false"
     >
-        <HBox
+        <VBox
             renderType="Bare"
-            justifyContent="Center"
+            justifyContent="Start"
             alignContent="Center"
+            alignItems="Center"
             height="100%"
         >
             <VBox
                 renderType="Bare"
                 justifyContent="Center"
                 alignItems="Center"
-                height="100%"
+                height="400px"
             >
                 <Avatar
                     id="avatar"
@@ -26,7 +27,7 @@
                     displaySize="XL"
                     showBorder="true"
                     press="onPress"
-                    class="speakerAvatar sapUiMediumMarginBottom"
+                    class="speakerAvatar sapUiMediumMarginTop sapUiMediumMarginBottom"
                 />
                 <SegmentedButton
                     id="segmentedButton"
@@ -36,25 +37,26 @@
                 >
                     <items>
                         <SegmentedButtonItem
-                            text="{i18n>homeText}"
+                            text="{i18n>homeViewTitle}"
                             key="home"
                         />
                         <SegmentedButtonItem
-                            text="{i18n>aboutText}"
+                            text="{i18n>aboutViewTitle}"
                             key="about"
                         />
                         <SegmentedButtonItem
-                            text="{i18n>projectsText}"
+                            text="{i18n>projectsViewTitle}"
                             key="projects"
                         />
                     </items>
                 </SegmentedButton>
-                <VBox
-                    id="topics"
-                    renderType="Bare"
-                    width="100%"
-                />
             </VBox>
-        </HBox>
+            <VBox
+                id="topics"
+                renderType="Bare"
+                width="300px"
+                class="sapUiTinyMarginTop"
+            />
+        </VBox>
     </Page>
 </mvc:View>

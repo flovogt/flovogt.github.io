@@ -10,3 +10,11 @@ html, body { height: 100%; }
     width: 18rem;
     font-size: 5rem
 }
+
+.homeHeader {
+    text-align: center;
+}
+
+.sapUiSizeCompact .pointItem {
+    height: 45px;
+}
