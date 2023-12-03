@@ -2,11 +2,11 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:f="sap.f"
-    controllerName="flovogt.website.controller.Home"
+    controllerName="flovogt.website.controller.Projects"
 >
     <f:Card>
         <f:content>
-            <Text text="Home ipsum" />
+            <Text text="Projects ipsum" />
         </f:content>
     </f:Card>
 </mvc:View>
