@@ -15,9 +15,9 @@
 		"serve-dist": "ws --compress -d dist"
 	},
 	"devDependencies": {
-		"@ui5/cli": "^3.9.1",
-		"eslint": "^8.56.0",
-		"local-web-server": "^5.3.1",
-		"rimraf": "^5.0.5"
+		"@ui5/cli": "^3.11.0",
+		"eslint": "^8.57.0",
+		"local-web-server": "^5.3.3",
+		"rimraf": "^5.0.7"
 	}
 }
