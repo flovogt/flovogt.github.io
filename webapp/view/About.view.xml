@@ -1,0 +1,47 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards"
+    controllerName="flovogt.website.controller.Topic"
+>
+    <f:Card id="card">
+        <f:header>
+            <card:Header title="{i18n>aboutMessage}" />
+        </f:header>
+        <f:content>
+            <List
+                id="points"
+                class="sapUiSmallMarginBottom"
+                showSeparators="None"
+                items="{path: '/story/points', sorter: [{path: 'start', descending: true}]}"
+            >
+                <CustomListItem class="pointItem">
+                    <HBox
+                        alignItems="Center"
+                        justifyContent="SpaceBetween"
+                        renderType="Bare"
+                    >
+                        <VBox
+                            class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom"
+                            renderType="Bare"
+                        >
+                            <Title
+                                level="H3"
+                                text="{path: 'name', formatter: '.formatText'}"
+                            />
+                            <Text
+                                text="{path: 'location', formatter: '.formatText'}"
+                            />
+                        </VBox>
+                        <ObjectStatus
+                            class="sapUiTinyMargin sapUiSmallMarginEnd"
+                            text="{start} - {end}"
+                            state="{=  ${end} === 'current' ? 'Success' : 'Information' }"
+                        />
+                    </HBox>
+                </CustomListItem>
+            </List>
+        </f:content>
+    </f:Card>
+</mvc:View>

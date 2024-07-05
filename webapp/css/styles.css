@@ -1,0 +1,20 @@
+html, body { height: 100%; }
+.speakerAvatar .sapFAvatarImageHolder {
+    height: 18rem;
+    width: 18rem;
+    font-size: 5rem
+}
+
+.speakerAvatar.sapFAvatarXL {
+    height: 18rem;
+    width: 18rem;
+    font-size: 5rem
+}
+
+.homeHeader {
+    text-align: center;
+}
+
+.sapUiSizeCompact .pointItem {
+    height: 45px;
+}

@@ -1,24 +1,32 @@
 <mvc:View
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    controllerName="flovogt.website.controller.Home"
+    xmlns:f="sap.f"
+    xmlns:card="sap.f.cards"
+    controllerName="flovogt.website.controller.Topic"
 >
-    <Page
-        id="homePage"
-        showHeader="false"
-    >
-        <HBox
-            justifyContent="Start"
-            alignContent="Center"
-            renderType="Bare"
-            class="sapUiSmallMarginTop"
-        >
-            <Text text="This is" class="sapUiTinyMarginBegin sapUiTinyMarginEnd"/>
-            <Link
-                text="flovogt"
-                target="_blank"
-                href="https://github.com/flovogt/"
-            />
-        </HBox>
-    </Page>
+    <f:Card id="card">
+        <f:content>
+            <VBox
+                height="110px"
+                renderType="Bare"
+                class="sapUiSmallMargin"
+                justifyContent="SpaceBetween"
+            >
+                <Title
+                    text="{i18n>homeMessage}"
+                    textAlign="Center"
+                    level="H2"
+                />
+                <Text
+                    text="{i18n>homeText}"
+                    textAlign="Center"
+                />
+                <Text
+                    text="{i18n>homeText2}"
+                    textAlign="Center"
+                />
+            </VBox>
+        </f:content>
+    </f:Card>
 </mvc:View>

@@ -17,7 +17,8 @@
             "minUI5Version": "1.120.1",
             "libs": {
                 "sap.ui.core": {},
-                "sap.m": {}
+                "sap.m": {},
+                "sap.f": {}
             }
         },
         "rootView": {
@@ -31,11 +32,14 @@
                 "settings": {
                     "bundleName": "flovogt.website.i18n.i18n",
                     "supportedLocales": [
-                        "en",
-                        "de"
+                       ""
                     ],
-                    "fallbackLocale": "en"
+                    "fallbackLocale": ""
                 }
+            },
+            "": {
+                "type": "sap.ui.model.json.JSONModel",
+                "uri": "model/data.json"
             }
         },
         "resources": {
@@ -54,7 +58,7 @@
                 "controlAggregation": "pages",
                 "bypassed": {
                     "target": [
-                        "notFound"
+                        "home"
                     ]
                 }
             },
@@ -65,18 +69,58 @@
                     "target": [
                         "home"
                     ]
+                },
+                {
+                    "pattern": "about",
+                    "name": "about",
+                    "target": [
+                        "about"
+                    ]
+                },
+                {
+                    "pattern": "projects",
+                    "name": "projects",
+                    "target": [
+                        "projects"
+                    ]
                 }
             ],
             "targets": {
-                "home": {
-                    "viewName": "Home",
-                    "viewId": "home",
+                "header": {
+                    "viewName": "Header",
+                    "viewId": "header",
                     "viewLevel": 1,
                     "title": "{i18n>homeViewTitle}"
                 },
-                "notFound": {
-                    "viewName": "NotFound",
-                    "viewId": "notFound"
+                "home": {
+                    "viewName": "Home",
+                    "viewId": "home",
+                    "title": "{i18n>homeViewTitle}",
+                    "level": 2,
+                    "parent": "header",
+                    "controlId": "topics",
+                    "controlAggregation": "items",
+                    "clearControlAggregation": true
+                },
+                "about": {
+                    "viewName": "About",
+                    "viewId": "about",
+                    "title": "{i18n>aboutViewTitle}",
+                    "level": 2,
+                    "parent": "header",
+                    "controlId": "topics",
+                    "controlAggregation": "items",
+                    "clearControlAggregation": true
+                },
+                "projects": {
+                    "viewName": "Projects",
+                    "viewId": "projects",
+                    "title": "{i18n>projectsViewTitle}",
+                    "level": 2,
+                    "parent": "header",
+                    "controlId": "topics",
+                    "controlAggregation": "items",
+                    "clearControlAggregation": true
                 }
             }
         }
