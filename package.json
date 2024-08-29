@@ -4,8 +4,8 @@
 	"description": "The website of flovogt",
 	"private": true,
 	"engines": {
-		"node": ">=18.14.0",
-		"npm": ">=9"
+		"node": "^20.11.0 || >=22.0.0",
+		"npm": ">= 8"
 	},
 	"scripts": {
 		"start": "ui5 serve",
@@ -15,9 +15,9 @@
 		"serve-dist": "ws --compress -d dist"
 	},
 	"devDependencies": {
-		"@ui5/cli": "^3.11.0",
-		"eslint": "^8.57.0",
-		"local-web-server": "^5.3.3",
-		"rimraf": "^5.0.7"
+		"@ui5/cli": "^4.0.6",
+		"eslint": "^9.9.1",
+		"local-web-server": "^5.4.0",
+		"rimraf": "^6.0.1"
 	}
 }
