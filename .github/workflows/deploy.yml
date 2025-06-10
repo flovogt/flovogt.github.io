@@ -13,24 +13,17 @@ jobs:
     - name: Setup Node.js environment
       uses: actions/setup-node@v4
       with:
-        node-version: 20
+        node-version: 24
     - run: npm install
-    - name: UI5 linter
-      run: |
-        npm run build
-        touch dist/.nojekyll
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
-      with:
-        path: dist
     - name: UI5 Build
       run: |
         npm run build
         touch dist/.nojekyll
-    - name: Upload artifact
-      uses: actions/upload-pages-artifact@v2
+    - name: Upload Build Output
+      id: deployment
+      uses: actions/upload-pages-artifact@v3
       with:
-        path: dist
+        path: dist/
   deploy:
     needs: build
     permissions:
@@ -43,4 +36,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
