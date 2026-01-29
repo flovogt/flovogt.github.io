@@ -26,7 +26,6 @@
                     src="img/flovogt.jpg"
                     displaySize="XL"
                     showBorder="true"
-                    press=".onPress"
                     class="speakerAvatar sapUiMediumMarginTop sapUiMediumMarginBottom"
                 />
                 <SegmentedButton

@@ -52,6 +52,7 @@
         "routing": {
             "config": {
                 "routerClass": "sap.m.routing.Router",
+                "type": "View",
                 "viewType": "XML",
                 "path": "flovogt.website.view",
                 "controlId": "app",
@@ -89,7 +90,7 @@
                 "header": {
                     "name": "Header",
                     "id": "header",
-                    "viewLevel": 1,
+                    "level": 1,
                     "title": "{i18n>homeViewTitle}"
                 },
                 "home": {
