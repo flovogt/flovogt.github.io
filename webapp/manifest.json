@@ -1,5 +1,5 @@
 {
-    "_version": "1.12.0",
+    "_version": "2.0.0",
     "sap.app": {
         "id": "flovogt.website",
         "type": "application",
@@ -14,7 +14,7 @@
             "compact": true
         },
         "dependencies": {
-            "minUI5Version": "1.120.1",
+            "minUI5Version": ["1.136.0", "2.0.0"],
             "libs": {
                 "sap.ui.core": {},
                 "sap.m": {},
@@ -53,7 +53,7 @@
             "config": {
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
-                "viewPath": "flovogt.website.view",
+                "path": "flovogt.website.view",
                 "controlId": "app",
                 "controlAggregation": "pages",
                 "bypassed": {
@@ -87,14 +87,14 @@
             ],
             "targets": {
                 "header": {
-                    "viewName": "Header",
-                    "viewId": "header",
+                    "name": "Header",
+                    "id": "header",
                     "viewLevel": 1,
                     "title": "{i18n>homeViewTitle}"
                 },
                 "home": {
-                    "viewName": "Home",
-                    "viewId": "home",
+                    "name": "Home",
+                    "id": "home",
                     "title": "{i18n>homeViewTitle}",
                     "level": 2,
                     "parent": "header",
@@ -103,8 +103,8 @@
                     "clearControlAggregation": true
                 },
                 "about": {
-                    "viewName": "About",
-                    "viewId": "about",
+                    "name": "About",
+                    "id": "about",
                     "title": "{i18n>aboutViewTitle}",
                     "level": 2,
                     "parent": "header",
@@ -113,8 +113,8 @@
                     "clearControlAggregation": true
                 },
                 "projects": {
-                    "viewName": "Projects",
-                    "viewId": "projects",
+                    "name": "Projects",
+                    "id": "projects",
                     "title": "{i18n>projectsViewTitle}",
                     "level": 2,
                     "parent": "header",

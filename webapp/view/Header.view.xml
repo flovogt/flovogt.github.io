@@ -26,14 +26,14 @@
                     src="img/flovogt.jpg"
                     displaySize="XL"
                     showBorder="true"
-                    press="onPress"
+                    press=".onPress"
                     class="speakerAvatar sapUiMediumMarginTop sapUiMediumMarginBottom"
                 />
                 <SegmentedButton
                     id="segmentedButton"
                     selectedKey="home"
                     width="300px"
-                    selectionChange="onMenuItemChange"
+                    selectionChange=".onMenuItemChange"
                 >
                     <items>
                         <SegmentedButtonItem
