@@ -34,8 +34,20 @@
             {
                 "name": "sp",
                 "start": "2017",
-                "end": "current",
+                "end": "2024",
                 "location": "spLocation"
+            },
+            {
+                "name": "sppo",
+                "start": "2024",
+                "end": "2025",
+                "location": "sppoLocation"
+            },
+            {
+                "name": "sppm",
+                "start": "2025",
+                "end": "current",
+                "location": "sppmLocation"
             }
         ]
     },
@@ -48,16 +60,16 @@
             "end": "current"
         },
         {
-            "name": "UI5 Tooling",
-            "description": "descUI5Tooling",
-            "url": "https://github.com/SAP/ui5-tooling",
+            "name": "UI5 CLI",
+            "description": "descUI5CLI",
+            "url": "https://github.com/UI5/cli",
             "start": "2020",
             "end": "current"
         },
         {
-            "name": "UI5 Tooling Extensions",
-            "description": "descUI5ToolingExtensions",
-            "url": "https://github.com/SAP/ui5-tooling-extensions",
+            "name": "UI5 CLI Extensions",
+            "description": "descUI5CLIExtensions",
+            "url": "https://github.com/UI5/cli-extensions",
             "start": "2022",
             "end": "current"
         },
